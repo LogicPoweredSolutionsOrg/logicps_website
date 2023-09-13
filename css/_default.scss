@@ -1,0 +1,416 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+q,
+em,
+img,
+small,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+:focus {
+  outline: 0;
+}
+input,
+textarea {
+  margin: 0;
+  outline: 0;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End Reset */
+
+/* html5 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/* Font */
+
+@font-face {
+  font-family: 'SamsungSharpSans';
+  src: url('../fonts/SamsungSharpSans.eot?#iefix') format('embedded-opentype'),  url('../fonts/SamsungSharpSans.otf')  format('opentype'),
+	     url('../fonts/SamsungSharpSans.woff') format('woff'), url('../fonts/SamsungSharpSans.ttf')  format('truetype'), url('../fonts/SamsungSharpSans.svg#SamsungSharpSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css?family=SamsungSharpSans:300,400,500,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900|Source+Sans+Pro:400,600,700,900&display=swap');
+
+// font-family: 'Source Sans Pro', sans-serif;
+// font-family: 'Raleway', sans-serif;
+
+
+.container-fluid {
+  padding: 0 40px;
+}
+.green-btn{
+  background: #0b5aa0;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 15px 20px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  display: inline-block;
+  &:hover{
+    border: 1px solid #0b5aa0;
+    background: none;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.border-btn{
+  background: none;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 15px 20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border: 1px solid #fff;
+  display: inline-block;
+  &:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    text-decoration: none;
+    color: #0b5aa0;
+  }
+}
+.border-btngreen{
+  background: none;
+  color: #0b5aa0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 15px 20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border: 1px solid #0b5aa0;
+  &:hover{
+    border: 1px solid #0b5aa0;
+    background: #0b5aa0;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+/* Default Font Styles
+______________________*/
+body,
+input,
+select,
+textarea {
+  font-family: "SamsungSharpSans", sans-serif;
+  font-size: 14px;
+  color: #606060;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body.noscroll{
+  overflow: hidden;
+  #header{
+    .white-heading{
+      position: relative;
+      z-index: -9;
+    }
+  }
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -210px;
+}
+.footer,
+.push {
+  height: 190px;
+}
+
+/* Headings
+______________________*/
+h1 {
+}
+h2 {
+  color: $defaultColor;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+
+/* Links
+______________________*/
+a {
+  -webkit-transition: 0.1s ease-out 0.1s;
+  -moz-transition: 0.1s ease-out 0.1s;
+  transition: 0.1s ease-out 0.1s;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.align-right {
+  float: right;
+  margin: 0 0 18px 30px;
+  border: 1px solid #dcdcdc;
+}
+.align-left {
+  float: left;
+  margin: 0 30px 18px 0;
+  border: 1px solid #dcdcdc;
+}
+
+/* input , textarea , button
+______________________*/
+
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 20px 10px;
+  color: #fff;
+  font-size: 16px;
+  background: none;
+  border-bottom: 1px solid #ccc;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #ffffff url(../images/down-icon.png) no-repeat 96% center / 15px
+    15px;
+  cursor: pointer;
+  padding: 6px 30px 6px 10px;
+  color: #888888;
+}
+
+.hamburger {
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  padding: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #f16421;
+  display: block;
+  border-radius: 0px;
+  transition: all 0.4s ease-in-out;
+  position: absolute; 
+}
+
+.bar1 {
+  top: 0;
+}
+
+.bar2,
+.bar3 {
+  top: 10px;
+}
+
+.bar3 {
+  right: 0;
+}
+
+.bar4 {
+  bottom: 7px;
+}
+
+/* HAMBURGER 3 */
+
+.hamburger3 .bar1 {
+  transform-origin: 5%;
+}
+
+.hamburger3 .bar4 {
+  transform-origin: 6%;
+}
+
+label > .hamburger3.active > .bar1{
+  transform: rotate(45deg);
+  height: 3px;
+  width: 32px;
+}
+
+label > .hamburger3.active > .bar3{
+  transform: rotate(45deg);
+  height: 3px;
+  background-color: transparent;
+}
+
+label > .hamburger3.active > .bar2{
+  transform: rotate(-45deg);
+  height: 3px;
+  background-color: transparent;
+}
+
+label > .hamburger3.active > .bar4{
+  transform: rotate(-45deg);
+  height: 3px;
+  width: 32px;
+}
+
+
+.default-btn {
+  
+}
+.default-btn:hover {
+}
+
+/* p, blockquote, address
+______________________*/
+p {
+}
+
+/* Lists
+______________________*/
+ul,
+ol {
+}
+
+ul li,
+ol li {
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
+/* ANIMATION - FLIP
+ */
+.m-flip {
+  overflow: hidden;
+  cursor: pointer;
+}
+.m-flip_item {
+  display: block;
+  position: relative;
+  top: 0;
+  transition: top 0.2s ease-out 0s;
+  &:nth-child(1) {
+    color: #666;
+  }
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cl {
+  clear: both;
+  font-size: 0;
+  height: 0;
+}
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* Alignments */
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.top {
+  vertical-align: top;
+}
+.middle {
+  vertical-align: middle;
+}
