@@ -312,12 +312,12 @@ if ($result->num_rows > 0) {
                             <img src="https://lpsapps.com:4499/LPS-CMS/public/assets/images/technologies/<?php echo $image; ?>"
                                 alt="">
                         </div>
-
-                    </div>
-                    <?php 
+                        <?php 
                             }
                         }
                             ?>
+                    </div>
+
                 </div>
             </div>
         </div>
